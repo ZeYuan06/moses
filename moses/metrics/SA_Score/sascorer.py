@@ -60,7 +60,7 @@ def calculateScore(m):
     fps = fp.GetNonzeroElements()
     score1 = 0.
     nf = 0
-    for bitId, v in iteritems(fps):
+    for bitId, v in fps.items():
         nf += v
         sfp = bitId
         score1 += _fscores.get(sfp, -4) * v
